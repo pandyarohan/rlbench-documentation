@@ -2,7 +2,12 @@
 from SimulationEnvironment.PutGroceriesEnv import PutGrocceriesRLGraspingEnvironment
 from models.CupboardAgents.GripperPoseAgent import GripperPoseRLAgent    
 import time
-# Set dataset_root to load from a folder and datasst will load from there. 
+
+#TODO: 
+# how do we share a dataset root folder without file path conflict?
+# 
+
+# Set dataset_root to load from a folder and dataset will load from there. 
 curr_env = PutGrocceriesRLGraspingEnvironment(dataset_root='/home/valay/Documents/robotics-data/rlbench_data',headless=True)
 # todo : Ensure Strict Variation Setting. 
 # Set image_paths_output=False when loading dataset from file. 
